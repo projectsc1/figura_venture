@@ -19,16 +19,15 @@ local function getAnimation(animName)
 	return nil
 end
   
-function pings.main()
+function pings.infamous()
 	getAnimation('infamous'):play()
 end
 
 page:newAction()
 	:item("minecraft:armor_stand")
 	:title("Infamous Pose")
-	:onLeftClick(pings.main)
+	:onLeftClick(pings.infamous)
 
-prev = main
   
 return action_wheel:newAction()
   :title("Animations")
